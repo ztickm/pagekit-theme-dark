@@ -3,7 +3,7 @@
     "type": "pagekit-theme",
     "version": "1.0.0",
     "title": "Dark Theme",
-    "description": "Dark Theme for Pagekit.",
+    "description": "Dark Theme for Pagekit. Based on Theme One and the UIkit Frontpage template.",
     "license": "MIT",
     "authors": [
         {
