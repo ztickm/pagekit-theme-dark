@@ -1,0 +1,18 @@
+{
+    "name": "sondreg/theme-dark",
+    "type": "pagekit-theme",
+    "version": "1.0.0",
+    "title": "Dark Theme",
+    "description": "Dark Theme for Pagekit.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sondre G",
+            "email": "sondre@sondre.me",
+            "homepage": "http://sondre.me"
+        }
+    ],
+    "extra": {
+        "image": "image.png"
+    }
+}
