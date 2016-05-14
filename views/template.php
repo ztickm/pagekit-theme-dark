@@ -78,9 +78,9 @@
 
       </div>
 
-      <hr class="uk-grid-divider">
-
       <?php if ($view->position()->exists('bottom')) : ?>
+        <hr class="uk-grid-divider">
+
         <div class="uk-grid" data-uk-grid-margin>
           <div class="uk-container uk-container-center">
               <section class="uk-grid uk-grid-match" data-uk-grid-margin>
@@ -90,10 +90,8 @@
         </div>
 
 
-
         <hr class="uk-grid-divider">
         <?php endif; ?>
-
 
     </div>
 
