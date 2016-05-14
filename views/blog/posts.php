@@ -1,6 +1,6 @@
 <?php $view->script('posts', 'blog:app/bundle/posts.js', 'vue') ?>
 
-<div class="tm-container-small">
+
 
     <?php foreach ($posts as $post) : ?>
     <article class="uk-article">
@@ -17,18 +17,16 @@
 
         <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
 
-        <div class="uk-margin-large-top">
-            <ul class="uk-subnav uk-margin-bottom-remove">
+        <div class="uk-margin-large-top uk-text-center">
 
                 <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>
-                <li><a class="uk-button uk-button-primary" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Read more') ?></a></li>
+                <a class="uk-button uk-button-danger" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Read more') ?></a>
                 <?php endif ?>
 
                 <?php if ($post->isCommentable() || $post->comment_count) : ?>
-                <li><a class="uk-button uk-button-primary" href="<?= $view->url('@blog/id#comments', ['id' => $post->id]) ?>"><?= _c('{0} No comments|{1} %num% Comment|]1,Inf[ %num% Comments', $post->comment_count, ['%num%' => $post->comment_count]) ?></a></li>
+                <a class="uk-button uk-button-danger" href="<?= $view->url('@blog/id#comments', ['id' => $post->id]) ?>"><?= _c('{0} No comments|{1} %num% Comment|]1,Inf[ %num% Comments', $post->comment_count, ['%num%' => $post->comment_count]) ?></a>
                 <?php endif ?>
 
-            </ul>
         </div>
 
     </article>
@@ -78,5 +76,3 @@
 
     </ul>
     <?php endif ?>
-
-</div>
